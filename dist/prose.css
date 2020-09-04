@@ -104,21 +104,24 @@ body,
 textarea,
 button,
 input {
-  font: 13px/20px 'OpenSans', sans-serif; }
+  font: 16px/20px 'OpenSans', sans-serif;
+  }
 
 html, body {
   background: #fff;
-  color: #516066;
-  -webkit-font-smoothing: antialiased; }
+  color: hsl(352deg 1% 37%);
+  -webkit-font-smoothing: antialiased;
+  }
 
 a {
-  color: #3d494e;
+  color: #288ffe;
   text-decoration: none;
   font-weight: 700;
   -webkit-transition: color 100ms linear;
   -moz-transition: color 100ms linear;
   -o-transition: color 100ms linear;
-  transition: color 100ms linear; }
+  transition: color 100ms linear;
+  }
 
 a.light {
   font-weight: normal; }
@@ -139,7 +142,7 @@ button::-moz-focus-inner {
 
 button,
 .button {
-  background: #516066;
+  background: hsl(211deg 99% 58%);
   display: block;
   position: relative;
   padding: 10px 15px;
@@ -151,7 +154,8 @@ button,
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  }
 
 button:active,
 .button:active {
@@ -182,11 +186,13 @@ button:active,
 
 .button.new,
 .button.good {
-  background-color: #90bb74; }
+  background-color: #288ffe;
+  }
 
 .button.new:hover,
 .button.good:hover {
-  background-color: #73955c; }
+  background-color: #288ffe;
+  }
 
 .listing .actions .delete:active,
 .listing .actions .delete:hover {
@@ -215,7 +221,8 @@ p > a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  }
 
 h1 {
   font-size: 24px; }
@@ -235,7 +242,8 @@ h3 {
   font-weight: 700; }
 
 h4 {
-  font-size: 14px; }
+  font-size: 18px;
+  }
 
 h5 {
   font-size: 13px; }
@@ -247,8 +255,9 @@ h6 {
 .label,
 h1 small,
 h2 small {
-  font-size: 13px;
-  font-weight: 400; }
+  font-size: 20px;
+  font-weight: 400;
+  }
 
 h3 small {
   font-size: 14px;
@@ -518,7 +527,8 @@ ins {
 .heading .details h4 {
   position: relative;
   top: 1px;
-  color: #d4d7d9; }
+  color: #f0f0f0;
+  }
 
 .heading .details h2 {
   padding: 0; }
@@ -551,7 +561,7 @@ ins {
 .sidebar {
   position: fixed;
   z-index: 1000;
-  top: 0;
+  top: 166px;
   right: -100%;
   width: 280px;
   padding-right: 60px;
@@ -561,7 +571,8 @@ ins {
   -webkit-transition: right 150ms ease-out;
   -moz-transition: right 150ms ease-out;
   -o-transition: right 150ms ease-out;
-  transition: right 150ms ease-out; }
+  transition: right 150ms ease-out;
+  }
 
 .sidebar.open {
   right: 0; }
@@ -656,7 +667,8 @@ ins {
   border-left: 1px solid #fff; }
 
 .open + #navigation {
-  border-color: #d4d7d9; }
+  border-color: rgba(255, 255, 255, 0);
+  }
 
 /* By default they are off */
 #navigation .nav {
@@ -704,8 +716,8 @@ ins {
   bottom: 0; }
 
 .nav li a {
-  background-color: #f8f8f8;
-  color: #a8afb2;
+  background-color: #288ffe;
+  color: hsl(198deg 100% 100%);
   display: block;
   width: 40px;
   height: 40px;
@@ -713,20 +725,23 @@ ins {
   text-align: center;
   margin: 10px;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  }
 
 .nav li a:hover {
-  background-color: #f0f0f0; }
+  background-color: #db6f6f;
+  }
 
 .nav li a:active {
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15); }
 
 .nav li a.active {
-  background-color: #526066;
+  background-color: #288ffe;
   color: #fff;
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15); }
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+  }
 
 .icon {
   background: transparent url("../img/sprite.png") no-repeat 0 0;
@@ -1043,13 +1058,14 @@ ins {
   animation-fill-mode: both; }
 
 .avatar {
-  background: #f8f8f8;
+  background: #288ffe;
   position: absolute;
   text-align: center;
   padding: 0;
-  z-index: 50;
-  width: 55px;
-  height: 50px; }
+  z-index: 48;
+  width: 50px;
+  height: 53px;
+  }
 
 .avatar img {
   background: #f8f8f8;
@@ -1059,10 +1075,11 @@ ins {
 
 .avatar .ico,
 .avatar .icon {
-  background-color: #f8f8f8;
+  background-color: hsl(211deg 99% 58%);
   line-height: 50px;
   display: block;
-  color: #516066; }
+  color: #fdfdfd;
+  }
 
 .avatar .icon {
   margin: 5px auto; }
@@ -1650,15 +1667,16 @@ a:hover .popup {
   margin-left: 15px; }
 
 .listing .actions a {
-  background: #f8f8f8;
+  background: hsl(211deg 100% 100%);
   display: block;
-  border: 1px solid #a8afb2;
+  border: 1px solid hsl(211deg 99% 58%);
   padding: 0 8px;
   font-weight: 400;
   margin: 0 -1px -1px;
-  height: 30px;
+  height: 31px;
   line-height: 28px;
-  float: left; }
+  float: left;
+  }
 
 .listing .actions a:hover,
 .listing .actions a:active {
@@ -1830,19 +1848,21 @@ a:hover .popup {
   File /:filename
 ---------------------------------------------*/
 .publish-flag, .draft-to-post {
-  color: #a8afb2;
+  color: #288ffe;
   height: 45px;
   line-height: 45px;
   padding: 0 15px;
-  float: right; }
+  float: right;
+  }
 
 .publish-flag .ico, .draft-to-post .ico {
   margin-left: 5px;
   color: #d4d7d9; }
 
 .publish-flag:hover, .draft-to-post:hover {
-  background: #f8f8f8;
-  color: #a8afb2; }
+  background: #288ffe;
+  color: #f0f0f0;
+  }
 
 .post .view {
   display: none; }
@@ -2368,7 +2388,8 @@ a:hover .popup {
   padding: 4px 0;
   /* Vertical padding around content */ }
 
-.CodeMirror pre {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   padding: 0 4px;
   /* Horizontal padding of content */ }
 
@@ -2455,7 +2476,7 @@ a:hover .popup {
   left: 0;
   right: 0;
   top: -50px;
-  bottom: -20px;
+  bottom: 0;
   overflow: hidden; }
 
 .CodeMirror-ruler {
@@ -2573,11 +2594,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror-scroll {
   overflow: scroll !important;
   /* Things will break if this is overridden */
-  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* 50px is the magic margin used to hide the element's real scrollbars */
   /* See overflow: hidden in .CodeMirror */
-  margin-bottom: -30px;
-  margin-right: -30px;
-  padding-bottom: 30px;
+  margin-bottom: -50px;
+  margin-right: -50px;
+  padding-bottom: 50px;
   height: 100%;
   outline: none;
   /* Prevent dragging from highlighting the element */
@@ -2585,7 +2606,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .CodeMirror-sizer {
   position: relative;
-  border-right: 30px solid transparent; }
+  border-right: 50px solid transparent; }
 
 /* The fake, visible scrollbars. Used to force redraw during scrolling
    before actual scrolling happens, thus preventing shaking and
@@ -2627,7 +2648,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   height: 100%;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: -30px; }
+  margin-bottom: -50px; }
 
 .CodeMirror-gutter-wrapper {
   position: absolute;
@@ -2657,7 +2678,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   min-height: 1px;
   /* prevents collapsing before first draw */ }
 
-.CodeMirror pre {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   /* Reset some styles that the rest of the page might have set */
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2678,7 +2700,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   -webkit-font-variant-ligatures: contextual;
   font-variant-ligatures: contextual; }
 
-.CodeMirror-wrap pre {
+.CodeMirror-wrap pre.CodeMirror-line,
+.CodeMirror-wrap pre.CodeMirror-line-like {
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: normal; }
@@ -2985,7 +3008,8 @@ span.CodeMirror-selectedtext {
   .dropdown-menu .dropdown a:hover {
     background: transparent; }
   .heading {
-    padding: 20px 15px; }
+    padding: 52px 15px;
+    }
   .content-search {
     margin: 8px 15px 15px; }
   .containment {
@@ -2993,7 +3017,8 @@ span.CodeMirror-selectedtext {
     margin: 0; }
   .limiter {
     width: 70%;
-    margin: 0; }
+    margin: 5px;
+    }
   .fixed .containment {
     padding-right: 60px; }
   .open .fixed .containment,
@@ -3011,7 +3036,8 @@ span.CodeMirror-selectedtext {
   .fixed .col-last {
     padding-right: 60px; }
   .post .view {
-    padding: 15px; } }
+    padding: 30px;
+    } }
 
 /* Screen sizes < 800px --------------------- */
 @media all and (max-width: 800px) {
